@@ -4,6 +4,12 @@ source 'https://rubygems.org'
 
 ruby '2.7.0'
 
+# persistance layer
+gem 'pg'
+gem 'rom', '~> 5.2.4'
+gem 'rom-sql', '~> 3.2.0'
+gem 'sequel', '~> 4.49.0'
+
 # Monitoring and logging
 gem 'semantic_logger'
 
@@ -19,6 +25,10 @@ group :development do
 end
 
 group :test, :development do
+  # data generation and cleanup
+  gem 'database_cleaner'
+  gem 'database_cleaner-sequel'
+
   # style check
   gem 'rubocop', require: false
   gem 'rubocop-rspec'
@@ -29,4 +39,6 @@ group :test do
   gem 'rspec'
   gem 'simplecov', require: false
   gem 'simplecov-json', require: false
+
+  gem 'rom-factory'
 end

@@ -16,6 +16,10 @@ gem 'semantic_logger'
 # dependency managment
 gem 'dry-system'
 
+# business logic section
+gem 'dry-monads'
+gem 'dry-validation'
+
 # Other
 gem 'bigdecimal', '1.4.2'
 gem 'dotenv', '~> 2.4'

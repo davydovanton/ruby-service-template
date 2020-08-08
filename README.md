@@ -18,4 +18,4 @@ Simple service template based on dry-system, hanami-api, hanami 2.0, rom, rabbit
 
 Released under MIT License.
 
-Copyright © 2020 Anton Davydov
+Copyright © 2020 Anton Davydov.

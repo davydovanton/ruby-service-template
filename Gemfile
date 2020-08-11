@@ -4,6 +4,11 @@ source 'https://rubygems.org'
 
 ruby '2.7.0'
 
+# http layer
+gem 'hanami-api'
+gem 'hanami-controller', git: 'https://github.com/hanami/controller.git', tag: 'v2.0.0.alpha1'
+gem 'puma', '~> 3.12.4'
+
 # persistance layer
 gem 'pg'
 gem 'rom', '~> 5.2.4'

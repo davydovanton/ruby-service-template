@@ -9,11 +9,10 @@ require 'hanami/controller/configuration'
 #
 # Docs for hanami actions:
 #   https://github.com/hanami/controller/tree/4bbf1a046f3fa567db77d4cfc1d400fd330f7daa
-Container.register('hanami.action.configuration', Hanami::Controller::Configuration.new)
 
-# Container.register('hanami.action.configuration', Hanami::Controller::Configuration.new do |config|
-#   config.default_response_format = :json
-# end)
+Container.register('hanami.action.configuration', Hanami::Controller::Configuration.new do |config|
+  config.default_response_format = :json
+end)
 
 module HTTP
   class App < Hanami::API

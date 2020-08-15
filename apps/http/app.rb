@@ -16,5 +16,6 @@ end)
 
 module HTTP
   class App < Hanami::API
+    get '/health', to: Container['http.actions.health.get']
   end
 end

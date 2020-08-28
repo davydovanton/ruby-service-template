@@ -2,6 +2,7 @@
 
 require 'dry/system/container'
 require_relative '../lib/core/types'
+require_relative '../lib/core/operation'
 
 require 'rom'
 require 'rom-sql'
@@ -18,7 +19,7 @@ class Container < Dry::System::Container
     config.env = ENV['PROJECT_ENV']
   end
 
-  load_paths!('system', 'lib')
+  load_paths!('system', 'lib', 'services', 'apps')
 end
 
 Import = Container.injector

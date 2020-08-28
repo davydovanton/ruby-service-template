@@ -7,6 +7,14 @@ class Container
     config.instance(&:instance)
   end
 
+  # business logic
+  auto_register!('services/accounts') do |config|
+    config.memoize = true
+    config.instance do |component|
+      component.identifier[/workers/] ? component.loader.constant : component.instance
+    end
+  end
+
   # transport layer
   if self[:settings].project_apps.include?('http')
     auto_register!('apps/http') do |config|

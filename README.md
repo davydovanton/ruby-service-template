@@ -4,6 +4,8 @@ Simple service template based on dry-system, hanami-api, hanami 2.0, rom, rabbit
 
 ## Motivation
 
+It will be awesome to use template repository as a [service chassis](https://microservices.io/patterns/microservice-chassis.html).
+
 ## Technologies
 
 * `hanami-api` + `hanami controller 2.0` as a http transport layer

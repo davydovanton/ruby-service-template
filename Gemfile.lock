@@ -125,7 +125,7 @@ GEM
     rainbow (3.0.0)
     rake (13.0.1)
     regexp_parser (1.7.1)
-    rexml (3.2.4)
+    rexml (3.2.5)
     rom (5.2.4)
       rom-changeset (~> 5.2, >= 5.2.3)
       rom-core (~> 5.2, >= 5.2.3)

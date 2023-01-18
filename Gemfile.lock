@@ -119,7 +119,7 @@ GEM
     pg (1.2.3)
     public_suffix (4.0.6)
     puma (3.12.6)
-    rack (2.2.3)
+    rack (2.2.6.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rainbow (3.0.0)
